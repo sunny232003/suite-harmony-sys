@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hotel: {
+					gold: 'hsl(var(--hotel-gold))',
+					'gold-foreground': 'hsl(var(--hotel-gold-foreground))',
+					navy: 'hsl(var(--hotel-navy))',
+					'navy-light': 'hsl(var(--hotel-navy-light))',
+					cream: 'hsl(var(--hotel-cream))',
+					warm: 'hsl(var(--hotel-warm))'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,42 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-up': 'slide-up 0.8s ease-out'
+			},
+			backgroundImage: {
+				'gradient-luxury': 'var(--gradient-luxury)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-warm': 'var(--gradient-warm)'
+			},
+			boxShadow: {
+				'luxury': 'var(--shadow-luxury)',
+				'gold': 'var(--shadow-gold)'
 			}
 		}
 	},
